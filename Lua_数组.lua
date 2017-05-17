@@ -1,5 +1,5 @@
+print("----- ä¸€ç»´æ•°ç»„")
 
-print("-- ¼òµ¥µÄÊı×é --")
 
 array = {"Lua", "Tutorial"}
 
@@ -8,7 +8,7 @@ for i= 0, 2 do
 end
 
 
-print("-- ¸ºÊıÎªÊı×éË÷ÒıÖµ£º --")
+--ä»¥è´Ÿæ•°ä¸ºç´¢å¼•
 
 array = {}
 
@@ -19,44 +19,3 @@ end
 for i = -2,2 do
    print(array[i])
 end
-
-
-
-print("-- ¶àÎ¬Êı×é --")
--- ³õÊ¼»¯Êı×é
-array = {}
-for i=1,3 do
-   array[i] = {}
-      for j=1,3 do
-         array[i][j] = i*j
-      end
-end
-
--- ·ÃÎÊÊı×é
-for i=1,3 do
-   for j=1,3 do
-      print(array[i][j])
-   end
-end
-
-
-print("-- ²»Í¬Ë÷Òı¼üµÄÈıĞĞÈıÁĞÕóÁĞ¶àÎ¬Êı×é£º --")
-
--- ³õÊ¼»¯Êı×é
-array = {}
-maxRows = 3
-maxColumns = 3
-for row=1,maxRows do
-   for col=1,maxColumns do
-      array[row*maxColumns +col] = row*col
-   end
-end
-
--- ·ÃÎÊÊı×é
-for row=1,maxRows do
-   for col=1,maxColumns do
-      print(array[row*maxColumns +col])
-   end
-end
-
-
